@@ -22,4 +22,10 @@ public class Manufacturer {
 
     @OneToOne(mappedBy = "manufacturer")
     private Details details;
+
+    public Manufacturer(Long id, Integer code, String name) {
+        this.id = id;
+        this.code = code;
+        this.name = name;
+    }
 }

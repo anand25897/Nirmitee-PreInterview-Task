@@ -22,4 +22,10 @@ public class Location {
 
     @OneToOne(mappedBy = "location")
     private Car car;
+
+    public Location(Long id, Double latitude, Double longitude) {
+        this.id = id;
+        this.latitude = latitude;
+        this.longitude = longitude;
+    }
 }
