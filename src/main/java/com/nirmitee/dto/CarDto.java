@@ -1,0 +1,20 @@
+package com.nirmitee.dto;
+
+import com.nirmitee.entity.Details;
+import com.nirmitee.entity.Location;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class CarDto {
+
+    private Long id;
+    private String condition;
+
+    private DetailsDto detailsDto;
+
+    private LocationDto locationDto;
+}
